@@ -30,8 +30,8 @@ function SplashScreen({ showEnterButton = true, onEnter, isEntered = false }) {
           return 100;
         }
 
-        // Variable increments for authentic platform loading feel
-        const increment = Math.floor(Math.random() * 6) + 4;
+        // Variable increments for authentic platform loading feel, taking ~2.0 seconds total (average 5% increment every 100ms)
+        const increment = Math.floor(Math.random() * 5) + 3; // 3 to 7, average 5
         const nextProgress = Math.min(prev + increment, 100);
 
         if (nextProgress < 25) {
@@ -48,7 +48,7 @@ function SplashScreen({ showEnterButton = true, onEnter, isEntered = false }) {
 
         return nextProgress;
       });
-    }, 90);
+    }, 100);
 
     return () => clearInterval(interval);
   }, [isEntered]);
