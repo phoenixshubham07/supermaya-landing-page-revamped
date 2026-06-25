@@ -171,7 +171,7 @@ function SplashScreen({ showEnterButton = true, onEnter, isEntered = false }) {
         .splash-container.entered {
           position: relative;
           width: 100%;
-          height: 200px; /* Collapsed height */
+          height: 220px; /* Collapsed height */
           background: transparent !important;
           backdrop-filter: none;
           -webkit-backdrop-filter: none;
@@ -216,7 +216,7 @@ function SplashScreen({ showEnterButton = true, onEnter, isEntered = false }) {
         }
 
         .splash-container.entered .hologram-stage {
-          transform: scale(0.58); /* Scaled down beautifully as a header */
+          transform: scale(0.78); /* Scaled down beautifully as a header */
           margin-top: 10px;
           margin-bottom: 0;
           padding: 10px;
@@ -224,8 +224,8 @@ function SplashScreen({ showEnterButton = true, onEnter, isEntered = false }) {
 
         .logo-wrapper-3d {
           position: relative;
-          width: 160px;
-          height: 120px;
+          width: 200px;
+          height: 150px;
           transform-style: preserve-3d;
           transition: transform ${mouse.hovered ? '0.08s ease-out' : '0.6s cubic-bezier(0.16, 1, 0.3, 1)'};
           display: flex;
@@ -275,14 +275,14 @@ function SplashScreen({ showEnterButton = true, onEnter, isEntered = false }) {
 
         /* Wordmark Typography Styling */
         .brand-text-display {
-          margin-top: 25px;
+          margin-top: 30px;
           font-family: "Plus Jakarta Sans", "Outfit", "Inter", sans-serif;
-          font-size: 15px;
+          font-size: 18px;
           font-weight: 800;
           letter-spacing: 0.6em;
           color: #ffffff;
           text-indent: 0.6em;
-          text-shadow: 0 0 10px rgba(20, 184, 166, 0.35);
+          text-shadow: 0 0 12px rgba(20, 184, 166, 0.4);
           transform-style: preserve-3d;
           transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
         }
